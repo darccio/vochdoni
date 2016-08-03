@@ -1,5 +1,9 @@
 package vochdoni
 
+import (
+	"time"
+)
+
 type Option struct {
 	Vote     Vote
 	Value    string
@@ -7,7 +11,11 @@ type Option struct {
 }
 
 type Vote struct {
-	Referendum Referendum
+	Referendum  Referendum
+	Voter       Token
+	CastTime    time.Time
+	Tracker     string
+	Fingerprint string
 	// Implicit
 	// Options    []Option
 }
