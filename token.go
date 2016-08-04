@@ -1,6 +1,10 @@
 package vochdoni
 
-type Token struct {
+type Authorization struct {
 	Referendum Referendum
-	Value      string
+	Token      Token
+}
+
+type Token struct {
+	Value string
 }

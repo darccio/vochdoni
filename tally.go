@@ -1,7 +1,18 @@
 package vochdoni
 
-type Result map[string]int64
+type Result struct {
+	Referendum Referendum
+	Data       map[string]int64
+}
 
-type Tally interface {
-	Count(Referendum) Result
+func (r *Result) Publish() {
+
+}
+
+type Tally struct {
+	Method string
+}
+
+func (t *Tally) Count(r *Referendum) (rs Result) {
+	return
 }
