@@ -13,6 +13,6 @@ type Tally struct {
 	Method string
 }
 
-func (t *Tally) Count(r *Referendum) (rs Result) {
+func (t *Tally) Count(r *Referendum) (rs *Result) {
 	return
 }

@@ -24,11 +24,11 @@ type Referendum struct {
 	// Votes       []Vote
 }
 
-func (r *Referendum) SetUp() {
+func (r *Referendum) Approve() {
 
 }
 
-func (r *Referendum) Approve() {
+func (r *Referendum) Freeze() {
 
 }
 
